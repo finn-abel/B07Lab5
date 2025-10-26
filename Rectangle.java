@@ -1,5 +1,7 @@
 package lab4;
 
+import java.util.Arrays;
+
 public class Rectangle{
     Point A;
     Point B;
@@ -60,6 +62,6 @@ public class Rectangle{
 
     @Override
     public int hashCode(){
-        return (this.A.hashCode() + this.B.hashCode()) * (this.C.hashCode() - this.D.hashCode());
+        return this.A.hashCode() + this.B.hashCode() + this.C.hashCode() + this.D.hashCode();
     }
 }
